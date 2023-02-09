@@ -8,6 +8,8 @@ import Link from "next/link";
 import { Tabs, TabList, Tab, TabPanel } from "react-tabs";
 import Profile from "./forms/profile";
 import Security from "./forms/security";
+import Notification from "./forms/notification";
+import Administration from "./forms/Administration";
 // import BusinessForm from "./forms/business";
 // import PersonalForm from "./forms/personal";
 
@@ -69,6 +71,12 @@ export default function Settings() {
                         </TabPanel>
                         <TabPanel>
                             <Security />
+                        </TabPanel>
+                        <TabPanel>
+                            <Notification />
+                        </TabPanel>
+                        <TabPanel>
+                            <Administration />
                         </TabPanel>
                     </Tabs>
                 </main>
